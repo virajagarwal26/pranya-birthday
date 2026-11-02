@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#9d7bd8" />
+    <meta name="description" content="A Little Universe for Pranya — a private birthday story." />
+    <title>A Little Universe for Pranya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Love+Light&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20261102-final" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to story</a>
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb-one"></span><span class="orb orb-two"></span>
+      <span class="petal p1">✦</span><span class="petal p2">♡</span><span class="petal p3">✦</span><span class="petal p4">❀</span>
+    </div>
+    <main id="app" tabindex="-1"></main>
+    <nav id="bottom-nav" class="bottom-nav" aria-label="Story navigation" hidden>
+      <button type="button" data-nav="back" aria-label="Go back"><span aria-hidden="true">←</span><small>Back</small></button>
+      <button type="button" data-route="menu" aria-label="Open universe menu"><span aria-hidden="true">✦</span><small>Universe</small></button>
+    </nav>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close photo">×</button>
+      <img id="dialog-image" alt="" />
+      <div class="dialog-copy"><p class="eyebrow">A memory, held close</p><h2 id="photo-dialog-title"></h2><p id="dialog-caption"></p></div>
+    </dialog>
+    <script src="content.js?v=20261102-final"></script>
+    <script src="app.js?v=20261102-final"></script>
+  </body>
+</html>
